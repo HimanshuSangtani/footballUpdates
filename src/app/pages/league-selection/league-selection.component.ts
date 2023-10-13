@@ -64,7 +64,7 @@ export class LeagueSelectionComponent implements OnInit {
       .subscribe((res) => {
         if (res.response.length) {
           this.standingList = res.response[0].league['standings'][0];
-        } else alert(res.errors.request);
+        } else alert(res.errors.requests);
       });
   }
 
