@@ -38,7 +38,7 @@ export class TeamDetailsComponent implements OnInit, OnDestroy {
     this.footballservice.getFixtures(leagueId, teamId).subscribe((res) => {
       if (res.response.length) {
         this.fixturesList = res.response.slice(0, 10);
-      } else alert(res.errors.request);
+      } else alert(res.errors.requests);
     });
   }
 
